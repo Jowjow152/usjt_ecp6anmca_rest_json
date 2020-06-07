@@ -21,6 +21,7 @@ import br.usjt.usjt_ecp6anmca_rest_json.model.repository.CidadeRepository;
 
 
 @RestController
+
 @RequestMapping("/cidades")
 public class CidadeResource {
 	

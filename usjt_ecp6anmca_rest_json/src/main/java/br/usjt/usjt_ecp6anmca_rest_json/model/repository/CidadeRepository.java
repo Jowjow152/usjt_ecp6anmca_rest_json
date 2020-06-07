@@ -10,7 +10,6 @@ import br.usjt.usjt_ecp6anmca_rest_json.model.beans.Cidade;
 
 public interface CidadeRepository extends JpaRepository<Cidade,Long>{
 
-	
 	@Query(value = "SELECT * FROM tb_cidade WHERE nome LIKE CONCAT ('%',:letra,'%')", nativeQuery = true)
 	public List<Cidade> findByInicial(@Param("letra") String letra);
 	
